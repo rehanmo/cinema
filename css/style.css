@@ -1,0 +1,387 @@
+/*start body*/
+body{
+    color: #fff;
+    text-transform: capitalize;
+}
+.container-fluid{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.sound{
+    position: absolute;
+    z-index: 25;
+}
+.sound i{
+    position: fixed;
+    top: 90%;
+    left: 30px;
+    right: 0;
+    border: 2px solid #000;
+    cursor: pointer !important;
+    width: 3%;
+    padding: 10px 12px;
+    background-color: #121313;
+    
+}
+/*end body*/
+/*start direct*/
+.direct{
+    background-image: url(../image/landing-slisder-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 630px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #0000000d;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+      }
+.overlay .master{
+    position: relative;
+    z-index: 20;
+    top: 20%;
+    bottom: 0;
+    margin: auto;
+    display: block;
+
+}
+.overlay .master i{
+    font-size: 14px;
+}
+.overlay .master h1{
+    font-style: italic;
+    font-family: auto;
+    text-transform: capitalize;
+    color: #ddd;
+    font-size: 42px;
+}
+.overlay .master h2{
+    font-size: 150px;
+    line-height: 180px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.overlay .master p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+span a{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding: 11px 50px;
+    text-decoration: none !important;
+    font-family: inherit;
+}
+span a:hover{
+    color: #fff !important;
+    transition: width .3s;
+    margin: 1px 2px;
+   
+}
+.direct span{
+   display: inline-block;
+   color: #fff;
+   margin-bottom: 10px;
+   border: 1px solid;
+   padding-bottom: 2px;
+    width: auto;
+}
+.direct span::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transform: width .3s;
+}
+.direct span:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.girl{
+    background-image: url(../image/landing-slider-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-position: bottom center;
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 990px) { 
+    
+.overlay .master h2{
+    font-size: 33px;
+    line-height: 24px;
+}
+.girl{
+    min-height: 0;
+}
+.girl .d-flex{
+    position: relative;
+    bottom: 45px;
+}
+.girl span a{
+padding: 2px 23px;
+}
+.cinerama {
+    width: 100% !important;
+    padding-bottom: 7px;
+}
+.overlay .master h1{
+    font-size: 20px;
+}
+
+ }
+
+/*end direct*/
+/*start interactive*/
+.active{
+    background-image: url(../image/landing-img-backgroun-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1000px;
+}
+
+.active .main , .active .festival , .active .carosul {
+    padding-top: 5rem;
+}
+.active .main img ,.active .festival img ,.active .metro img ,.active .redmo img ,
+.active .redire img , .active .studio img
+{
+   
+    width: 80%;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.active .metro img{
+    margin-top: 0 !important;
+}
+.active .inter img , .active .portfolio img ,.active .carosul img ,.active .full img{
+    width: 80%;
+    margin: auto;
+   
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+.studio ,.redire {
+    position: relative;
+    bottom: 75%;
+    left: 0;
+}
+.full{
+    position: relative;
+    bottom: 80%;
+    left: 0;
+}
+#movspan , #directh {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 27%;
+}
+#fullslid{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+}
+@media (max-width: 900px) { 
+    .active .inter img , .active .portfolio img ,.active .carosul img ,.active .full img{
+        width: 100%;
+        margin: auto;
+       
+        margin-top: 30px;
+        margin-bottom: 1rem;
+    }
+    .active .main , .active .festival , .active .carosul {
+        padding-top: 0;
+    }
+.active .main img ,.active .festival img  ,.active .metro img ,.active .redmo img ,
+.active .redire img , .active .studio img
+{
+   
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem !important;
+    margin-bottom: 3rem;
+}
+
+.studio ,.redire {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.full{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#movspan ,#directh , #fullslid{
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:97%;
+}
+#directh{
+    top: 93%;
+}
+ }
+
+/*end interactive*/
+/*start set*/
+.set{
+   height: 600px;
+   overflow: hidden;
+}
+.set{
+    width: 100%;
+}
+.set .welcom{
+    width: 15%;
+    height: 150px;
+    background-image: url(../image/landing-port-6.jpg);
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+}
+.set .welcomtwo{
+    width: 20%;
+    height: 200px;
+    background-image: url(../image/landing-port-14.jpg);
+    background-size: cover;
+    display: inline-block;
+}
+.set .welcomthree{
+    width: 30%;
+    height: 300px;
+    background-image: url(../image/landing-port-13.jpg);
+    position: relative;
+    background-size: cover;
+    display: inline-block;
+    z-index: 2;
+    right: 4%;
+    top: 60px;
+
+
+}
+
+.set .welcomfour{
+    width: 22%;
+    height: 185px;
+    background-image: url(../image/landing-port-11.jpg);
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    right: 5%;
+   
+}
+.set .welcomfive{
+    width: 16%;
+    height: 170px;
+    background-image: url(../image/landing-port-12.jpg);
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    left: 83%;
+    bottom: 150px;
+}
+
+.set .spolight , .speices .spolight , .inner .spolight{
+    padding: 7rem 0 30px 0;
+}
+.spolight p {
+    color: rgb(169, 169, 169);
+}
+
+.spolight h3{
+   color:  rgb(0, 0, 0);
+   text-transform: uppercase;
+   font-size: 40px;
+}
+
+
+.set .one img{
+    width: 540px;
+    height: 1108px;
+}
+
+@media (max-width:500px) { 
+    
+    .spolight h3{
+       color:  rgb(0, 0, 0);
+       text-transform: uppercase;
+       font-size: 20px;
+    }
+}
+
+
+
+/*end set*/
+/*start spaices*/
+.speices{
+    background-image: url(../image/landing-img-backgroun-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.speices h3{
+    color: #fff;
+}
+.speices .interact{
+    margin-top: 5rem;
+}
+.speices p{
+    
+    line-height: 1.7;
+    width: 80%;
+}
+.speices img{
+    margin-bottom: 4rem;
+    border-radius: 10px;
+}
+/*end spices*/
+/*start inner*/
+.inner img{
+    
+    margin: 1.5rem auto;
+    width:98% !important;
+    border: 1px solid #ddd;
+}
+
+/*end inner*/
