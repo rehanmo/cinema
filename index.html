@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cinema site</title>
+    <title>cinerama</title>
   <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="shortcut icon" href="css/favicon-96x96.png" />
   <link rel="stylesheet" href="css/animation.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="sound" onclick="bleep.play()"><i class="fas fa-pause fa-1x"></i></a>
- 
+  
   <!--start direct-->
   <div class="direct ">
+    <audio id="track">
+      <source src="bleep.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <div id="player-container">
+      <div id="play-pause" class="play">Play</div>
+    </div> 
     <div class="overlay">
       <div class="master">
       <div class="container">
        <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center wow shake" data-wow-duration="3s">
           <i class="fas fa-star"></i> <i class="fas fa-star"></i>
           <i class="fas fa-star"></i> <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </div>
         <div class="col-md-12 text-center pt-2">
           <h1>Direct your masterPiece</h1>
-                   <h2>cinerama</h2>
+                   <h2 class="wow bounceIn"  data-wow-duration="4s ">cinerama</h2>
           <p>a modern movie and cinema theme</p>
         </div>
       <div class="col-md-12 row text-center pt-2 m-auto ">
-        <div class="col-md-6 m-auto text-center ">
-          <img src="image/Landing-client-1.png">
-          <img src="image/Landing-client-2.png">
-          <img src="image/Landing-client-3.png">
-          <img src="image/Landing-client-4.png">
+        <div class="col-md-6 m-auto text-center  wow bounceIn">
+          <img src="image/Landing-client-1.png" class="wow fadeInRight" data-wow-duration="5s">
+          <img src="image/Landing-client-2.png" class="wow fadeInRight" data-wow-duration="6s">
+          <img src="image/Landing-client-3.png" class="wow fadeInRight" data-wow-duration="7s">
+          <img src="image/Landing-client-4.png" class="wow fadeInRight" data-wow-duration="8s">
 
         </div>
       
@@ -69,55 +76,64 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="main">
+        <div class="main wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
           <img src="image/landing-homepages-18.jpg" alt="">
           </div>
              <span class=" text-center">main home</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="inter">
+        <div class="inter wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/land.jpg" alt="image">
         </div>
        <span>interactive home</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="festival">
+        <div class="festival wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/accrose.jpg" alt="">
         </div>
        <span>film festival</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="carosul">
+        <div class="carosul wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/carsoul.jpg" alt="" class="mt-0">
         </div>
        <span>carousel home</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="studio">
+        <div class="studio wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/studio.jpg" alt="">
         </div>
        <span id="movspan">movie studio</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="portfolio pt-5">
+        <div class="portfolio pt-5 wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/k.jpg" alt=" ">
         </div>
        <span>movie portfolio</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="metro">
+        <div class="metro wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/w.jpg" alt="" class="mt-0">
         </div>
        <span>blog metro</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="redire">
+        <div class="redire wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/sad.jpg" alt="">
         </div>
        <span id="directh">director home</span>
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="redmo">
+        <div class="redmo  wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/f.jpg" alt="" class="mt-0">
         </div>
        <span>movie home</span>
@@ -126,7 +142,8 @@
         
       </div>
       <div class="col-md-4  col-sm-12 text-center">
-        <div class="full">
+        <div class="full  wow fadeInUp" data-wow-duration="2s"  data-wow-offset="2">
+          <div class="overlay"></div>
          <img src="image/nothing.jpg" alt="">
         </div>
        <span id="fullslid">full screen slider</span>
@@ -137,65 +154,65 @@
 
     <!--end interactive-->
   <!--start set-->
-<div class="set ">
+<div class="set wow bounceInUp " data-wow-duration="2s"  data-wow-offset="2">
   <div class="container-fluid">
     <div class="row spolight">
       <div class="col-md-12 text-center">
-        <p class="">your work in a spotlight</p>
+        <p class="wow bounceIn">your work in a spotlight</p>
         <h3> a set of portfolio layouts</h3>
       </div>
     </div>
   </div>
-  <div>
-    <div class="welcom ">
+  <div >
+    <div class="welcom wow fadeInRight" data-wow-duration="3s">
 
     </div>
-    <div class="welcomtwo">
+    <div class="welcomtwo wow fadeInRight" data-wow-duration="3s">
       
     </div>
-    <div class="welcomthree">
+    <div class="welcomthree wow fadeInRight" data-wow-duration="3s">
       
     </div>
-    <div class="welcomfour">
+    <div class="welcomfour wow fadeInRight" data-wow-duration="3s">
       
     </div>
-    <div class="welcomfive">
+    <div class="welcomfive wow fadeInRight" data-wow-duration="3s">
       
     </div>
   </div>
 </div>
   <!--end set-->
   <!--start speices-->
-  <div class="speices ">
+  <div class="speices wow bounceInUp "  data-wow-duration="2s"  data-wow-offset="2">
     <div class="container">
       <div class="row spolight">
         <div class="col-md-12 text-center">
-          <p class="">Film.specific Layouts </p>
+          <h6 style="color: #afadad;" class=" text-center  wow bounceIn">Film.specific Layouts </h6>
           <h3>   Introduce your work </h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2" >
           
           <img src="image/landing-img-9.png" alt="" class="w-100">
         </div>
-        <div class="col-md-6 interact" >
+        <div class="col-md-6 interact wow fadeInRight "  data-wow-duration="2s"  data-wow-offset="2">
           <h3 class=""> Interactive Showcase </h3>
           <p style="color: #757373; padding-top: 1rem;">There is no great movie without a great scenography. With Cinerama’s collection of practical elements and the stunning interactive showcase layout you can create the perfect set for displaying your projects.</p>
         </div>
         
-        <div class="col-md-6 interact">
+        <div class="col-md-6 interact  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
           <h3 class=""> Interactive Showcase </h3>
           <p style="color: #757373; padding-top: 1rem;">There is no great movie without a great scenography. With Cinerama’s collection of practical elements and the stunning interactive showcase layout you can create the perfect set for displaying your projects.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6  wow fadeInRight "  data-wow-duration="2s"  data-wow-offset="2">
           <img src="image/landing-img-10.png" alt="" class="w-100">
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
           <img src="image/landing-img-11.png" alt="" class="w-100">
         </div>
-        <div class="col-md-6 interact">
+        <div class="col-md-6 interact  wow fadeInRight "  data-wow-duration="2s"  data-wow-offset="2">
           <h3 class=""> Interactive Showcase </h3>
           <p style="color: #757373; padding-top: 1rem;">There is no great movie without a great scenography. With Cinerama’s collection of practical elements and the stunning interactive showcase layout you can create the perfect set for displaying your projects.</p>
         </div>
@@ -208,53 +225,83 @@
   <div class="inner text-dark ">
     <div class="container">
       <div class="row spolight ">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center  wow bounceIn "  data-wow-duration="5s"  data-wow-offset="2">
           <p class="">ready made </p>
           <h3>   inner pages </h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img src="image/inner-page-1.png"  class="w-100" alt="">
+          <img src="image/inner-page-1.png"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-18.jpg"  class="w-100" alt="">
+          <img src="image/inner-page-18.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-3.jpg"  class="w-100" alt="">
+          <img src="image/inner-page-3.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-13-1.jpg"  class="w-100" alt="">
+          <img src="image/inner-page-13-1.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-5.jpg"  class="w-100" alt="">  
+          <img src="image/inner-page-5.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">  
           </div>
         <div class="col-md-4">
-          <img src="image/inner-page-14.jpg"  class="w-100" alt="">       
+          <img src="image/inner-page-14.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">       
          </div>
         <div class="col-md-4">
-          <img src="image/inner-page-7.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-7.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-15.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-15.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-9.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-9.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-17.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-17.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-11.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-11.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
         <div class="col-md-4">
-          <img src="image/inner-page-16.jpg"  class="w-100" alt="">        
+          <img src="image/inner-page-16.jpg"  class="w-100  wow fadeInLeft "  data-wow-duration="2s"  data-wow-offset="2">        
         </div>
       </div>
     </div>
   </div>
   <!--end inner-->
-<!--end intro-->
+<!--start get-->
+<div class="get text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="filmicon">
+          <img src="image/Landing-slider-logo.png">
+        </div>
+        <h2 class="wow bounceIn"  data-wow-duration="2s"  data-wow-offset="2">cinerama</h2>
+        <p class="wow fadeInLeft "  data-wow-duration="3s"  data-wow-offset="">Get the show on the road in the best way possible with Cinerama! Everything any movie maker & production studio may need. Action! </p>
+      </div>
+      <div class="col-md-12 ">
+        
+      <span class="mt-5  wow fadeInUp "  data-wow-duration="4s"  data-wow-offset="2"><a href="#" >purchase</a></span>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end git-->
+
+<section class="loadoverlayicon">
+  <div class="loadin2">
+    <img src="image/t.png">
+  <h4>loading.......</h4>
+  </div>
+</section>
+
+
+
 <script src="js/jquery.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -263,10 +310,7 @@
     new WOW().init();
 </script>
 <script src="js/main.js"></script>
-<script>
-  
-  
-</script>
+
   
 </body>
 </html>

@@ -2,27 +2,35 @@
 body{
     color: #fff;
     text-transform: capitalize;
+    overflow: hidden;
 }
 .container-fluid{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.sound{
-    position: absolute;
-    z-index: 25;
-}
-.sound i{
+#player-container{
     position: fixed;
-    top: 90%;
-    left: 30px;
-    right: 0;
-    border: 2px solid #000;
-    cursor: pointer !important;
-    width: 3%;
-    padding: 10px 12px;
-    background-color: #121313;
-    
+    top: 80%;
+    left: 20px;
+    z-index: 5;
 }
+#player-container #play-pause {
+    cursor: pointer;
+    text-indent: -999999px;
+    height:40px;
+    width: 40px;
+    background: #2b282a;
+    background-image: url('http://basichow.com/asserts/images/play.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:20px;
+  }
+  .play {
+    background-image: url('http://basichow.com/asserts/images/play.png');
+  }
+  .pause {
+     background-image: url('http://basichow.com/asserts/images/pause.png')!important;
+  }
 /*end body*/
 /*start direct*/
 .direct{
@@ -38,7 +46,7 @@ body{
     right: 0;
 }
 
-    .overlay {
+.overlay {
         position: absolute;
         bottom: 100%;
         left: 0;
@@ -219,49 +227,68 @@ padding: 2px 23px;
     top: 24%;
 }
 @media (max-width: 900px) { 
-    .active .inter img , .active .portfolio img ,.active .carosul img ,.active .full img{
-        width: 100%;
-        margin: auto;
-       
-        margin-top: 30px;
-        margin-bottom: 1rem;
-    }
-    .active .main , .active .festival , .active .carosul {
-        padding-top: 0;
-    }
-.active .main img ,.active .festival img  ,.active .metro img ,.active .redmo img ,
-.active .redire img , .active .studio img
-{
-   
-    width: 100%;
-    margin: auto;
-    margin-top: 2rem !important;
-    margin-bottom: 3rem;
-}
 
-.studio ,.redire {
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
+                .active .inter img , .active .portfolio img ,.active .carosul img ,.active .full img{
+                    width: 100%;
+                    margin: auto;
+                
+                    margin-top: 30px;
+                    margin-bottom: 1rem;
+                }
+                .active .main , .active .festival , .active .carosul {
+                    padding-top: 0;
+                }
+                
+            .active .main img ,.active .festival img  ,.active .metro img ,.active .redmo img ,
+            .active .redire img , .active .studio img
+            {
+            
+                width: 100%;
+                margin: auto;
+                margin-top: 2rem !important;
+                margin-bottom: 3rem;
+            }
 
-.full{
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
-#movspan ,#directh , #fullslid{
-    
+            .studio ,.redire {
+                position: relative;
+                bottom: 0;
+                left: 0;
+            }
+
+            .full{
+                position: relative;
+                bottom: 18px;
+                left: 0;
+            }
+            #movspan ,#directh , #fullslid{
+                
+                position: absolute;
+                left: 0;
+                right: 0;
+                top:97%;
+            }
+            #directh{
+                top: 93%;
+            }
+            #fullslid {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 85%;
+            }
+                    
+ }
+ .overlay:hover {
     position: absolute;
+    bottom: 100%;
     left: 0;
     right: 0;
-    top:97%;
-}
-#directh{
-    top: 93%;
-}
+    top: 0;
+    background-color: #0000006b;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
  }
-
 /*end interactive*/
 /*start set*/
 .set{
@@ -349,10 +376,7 @@ padding: 2px 23px;
        font-size: 20px;
     }
 }
-
-
-
-/*end set*/
+/* end set*/
 /*start spaices*/
 .speices{
     background-image: url(../image/landing-img-backgroun-3.jpg);
@@ -383,5 +407,99 @@ padding: 2px 23px;
     width:98% !important;
     border: 1px solid #ddd;
 }
+@media (max-width: 700px) { 
+
+    .speices .interact{
+        margin-top: 10px;
+    }
+}
 
 /*end inner*/
+/*start get*/
+
+.get{
+    background-image: url(../image/Landing-slider-img-33.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-attachment:fixed;
+}
+.filmicon{
+    margin-top: 8rem;
+}
+.get h2{
+    font-size: 60px;
+     text-transform: uppercase;
+    font-family: unset;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.get p{
+    font-size: 25px;
+    line-height: 1.6;
+    width: 75%;
+    font-style: italic;
+    margin: auto;
+    color: rgb(169, 169, 169);
+}
+.get span{
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 10px;
+        border: 1px solid;
+        padding-bottom: 2px;
+        width: auto;
+}
+.get span a{
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        padding: 11px 50px;
+        text-decoration: none !important;
+        font-family: inherit;
+    
+}
+.get span a:hover{
+    color: #fff !important;
+    transition: width .3s;
+    margin: 1px 2px;
+   
+}
+
+.get span::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transform: width .3s;
+}
+.get span:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+/*end get*/
+
+/*start loading icon*/
+.loadoverlayicon{
+    position: fixed;
+    background: #000;
+    color: #fff;
+    left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 99999;
+}
+.loadoverlayicon .loadin2{
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+.loadoverlayicon img{
+    
+    width: 180px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+/*end loading icon*/
