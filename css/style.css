@@ -478,6 +478,13 @@ padding: 2px 23px;
     width: 100%;
     transition: width .3s;
 }
+@media (max-width: 500px) { 
+.get h2{
+    font-size: 20px;
+}
+    
+}
+
 /*end get*/
 
 /*start loading icon*/
@@ -502,4 +509,12 @@ padding: 2px 23px;
     height: 200px;
     margin-bottom: 20px;
 }
+@media (max-width: 500px) { 
+    .loadoverlayicon .loadin2{
+        position: relative;
+        top: 30%;
+        left: 10%;
+    }
+        
+    }
 /*end loading icon*/
